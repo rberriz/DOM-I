@@ -50,11 +50,13 @@ navItems[2].textContent = siteContent['nav']['nav-item-3']
 navItems[3].textContent = siteContent['nav']['nav-item-4']
 navItems[4].textContent = siteContent['nav']['nav-item-5']
 navItems[5].textContent = siteContent['nav']['nav-item-6']
-
-
-// navItems.textContent = siteContent(['nav']['nav-item-1'])
-// navItems.classList.add('nav-item')
-// navItems.textContent = 'test';
+navItems[0].style.color = 'green'
+navItems[1].style.color = 'green'
+navItems[2].style.color = 'green'
+navItems[3].style.color = 'green'
+navItems[4].style.color = 'green'
+navItems[5].style.color = 'green'
+// navItems[0].appendChild(test
 
 // HEADER
 let headerImg = document.getElementById("cta-img");
@@ -89,6 +91,11 @@ contentBody[4].textContent = siteContent['main-content']['vision-content'];
 
 let contactHeader = document.querySelector('.contact h4')
 contactHeader.textContent = siteContent['contact']['contact-h4']
+
+let contactContent = document.querySelectorAll('.contact p')
+contactContent[0].textContent = siteContent['contact']['address']
+contactContent[1].textContent = siteContent['contact']['phone']
+contactContent[2].textContent = siteContent['contact']['email']
 
 // FOOTER
 let footer = document.querySelector('footer p')
